@@ -1,11 +1,7 @@
 'use strict';
 
 angular.module('socialNetwork', [
-        'ngRoute',
-        'socialNetwork.common',
-        'socialNetwork.home',
-        'socialNetwork.newsFeed',
-        'socialNetwork.users.identity'
+        'ngRoute'
     ])
     .config(['$routeProvider', function($routeProvider) {
          $routeProvider.otherwise({redirectTo: '/'});
