@@ -1,9 +1,9 @@
-<html lang="en">
+<html lang="en" ng-app="socialNetwork">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Social Network</title>
-    <meta name="description" content="SoftUni Social Network">
+    <meta name="description" content="SoftUni Social Network ATo">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app/bower_components/html5-boilerplate/dist/css/normalize.css">
     <link rel="stylesheet" href="app/bower_components/html5-boilerplate/dist/css/main.css">
@@ -25,25 +25,19 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav">
-
                 <li>
                     <a href="#/">Home</a>
                 </li>
-
             </ul>
-
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
-                <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
-            </ul>
-
         </div>
     </div>
 </div>
 
 
 <div class="container">
-
+<div class="row">
+    <div ng-view=/>
+</div>
 </div>
 
 <script src="app/bower_components/jquery/dist/jquery.min.js"></script>
@@ -51,5 +45,6 @@
 <script src="app/bower_components/angular/angular.js"></script>
 <script src="app/bower_components/angular-route/angular-route.js"></script>
 <script src="app/app.js"></script>
+<script src="app/home/home-controller.js"></script>
 </body>
 </html>

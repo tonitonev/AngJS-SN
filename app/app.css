@@ -1,6 +1,7 @@
 /* app css stylesheet */
 
 body {
+    /* needed to display div class="col-md-6" */
     margin-top: 60px;
 }
 

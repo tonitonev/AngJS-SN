@@ -1,9 +1,10 @@
 'use strict';
 
 angular.module('socialNetwork', [
-        'ngRoute'
+        'ngRoute',
+        'socialNetwork.home'
     ])
-    .config(['$routeProvider', function($routeProvider) {
-         $routeProvider.otherwise({redirectTo: '/'});
+    .config(['$routeProvider', function ($routeProvider) {
+        $routeProvider.otherwise({redirectTo: '/'});
     }])
     .constant('BASE_URL', 'http://softuni-social-network.azurewebsites.net/api/');
