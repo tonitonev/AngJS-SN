@@ -2,7 +2,10 @@
 
 angular.module('socialNetwork', [
         'ngRoute',
-        'socialNetwork.home'
+        'socialNetwork.common',
+        'socialNetwork.home',
+        'socialNetwork.newsFeed',
+        'socialNetwork.users.identity'
     ])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/'});
