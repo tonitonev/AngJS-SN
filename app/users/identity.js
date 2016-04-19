@@ -9,8 +9,10 @@ angular.module('socialNetwork.users.identity', [])
 
             var currentUser = undefined;
 
+            //comment this initially to get acces token logged on console
             var accessToken =
-                'bDGI5bzGbDxrBWydvFiJFRhLFuJaN3Y4V3-T8Po4xc1huKpfag4jv_0Swx-uJ0_uS62qQX3F_GjXUd9y8BeuZQhLiw15cCFEnJMhbXiCQsZxEVGzA1hCyk-dFCueBMw669u6fWhsVyEDpgjwiVOcuXCy3jydAV1vIXoFyq8BmlGMmCgO_OIpt38B5FGcmK1j9D9hPZksut8OYke_9SNRw8aKJqyFnI8p9pDJHrbRIrusW-ezzok86MwKV6y4XhuU-d3bfeaNlajuX1reUhoFZ0oNOs9UelgzFHE5zuF-K5shUItouczMESIogG8aiFGrJs5Ef5UN8_3zN8Fob2mNPubcY-39ep8mPYoCajjDHFUy26ysLtBxWPlEj218rWWwj2KDZLl7-LdVpeDiDBvRyoJ7wAl0w6n-YTwa_QZJj0q1zubYg3HL31TONJxZ9_h3IjWBR7oyZ3Am9TLr-OfDw_JRHzEZnQfbYNEmwCMSZf052MVkyr-XrkaidFendraj';
+                'lW6sD9FRCBVTe1iosnWOASjyVwabIch-x4JU6OX56HswcrJnI_EQ1OoYRJSY3J-Tr-7RF1oUpaV-CXXGmXvO4c25dLjzrmO1JJE2VwuopuEAIlGZFpmoYOPQP13tpu-ukgDcuBmfpu8irp29fRAZlPVmf0coZ2eYZjs68ZpUPkyCeaCpE0rjMh3wG3p5otZSWTrfJwAlosloY2yg9Tbav8lIW_-jdp76sbtogCoF0zyBYzypKWEJegd2C5onMSKaRnA7hR9d8667uxamkauvlGq4NHJrB68MrOcgDUXOrRJM-iJm580AlJACg3ytQsLYyzuvdxYq5Xq8nDg18As37T1XNaOYtHrdna8ZIIL0zsNMDBpHds-BsXi8GnCcJMeb8Cy6XIB-fO7CJ4SfdCkbLhm_942w24GMx2jF0lkM21amCxkZOf_y0CTD0v__Zd8Qqr6Hok29hS4CmMul9NpLnnyJl8C5cRx2ACi7cORK7-dOOcOqdCVO3IORbWs5a31W';
+            //comment this initially to get acces token logged on console
             $http.defaults.headers.common.Authorization = 'Bearer ' + accessToken;
 
             $http.get(BASE_URL + 'me')

@@ -12,7 +12,7 @@
     <script src="app/bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
     <base href="/"/>
 </head>
-<body>
+<body ng-controller="MainCtrl" cz-shortcut-listen="true">
 <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -24,15 +24,30 @@
             </button>
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
-            <ul class="nav navbar-nav">
+            <ul ng-if="isAuthenticated" class="nav navbar-nav">
                 <li>
-                    <a href="#/">Home</a>
+                    <a href="#/newsFeed">News Feed</a>
+                </li>
+                <li>
+                    <a href="#/friendRequests">Friend Requests</a>
+                </li>
+                <li>
+                    <a href="#/settings">Settings</a>
+                </li>
+                <li>
+                    <a href="#/changePassword">Change Password</a>
+                </li>
+                <li>
+                    <a href="#/logout">Logout</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 
+<div class="container">
+    {{currentUser.id}}
+</div>
 
 <div class="container">
 <div class="row">
