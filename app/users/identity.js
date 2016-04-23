@@ -11,7 +11,7 @@ angular.module('socialNetwork.users.identity', [])
 
             //comment this initially to get acces token logged on console
             var accessToken =
-            "4hwnAt4mYLynWmAux8eHkluozSAFsB4F8t5CfFHmUnlo8tdLFak_imyOsTfWOfadjg6mPkL4Asu5oHy3wbzmL0iTR9-lQPPLqPa7SPaQyDNgiXO2ImkKej2-5ZNDNe1FYxltJce4Y5oOIybMxw4w_XSkOXW-sR32Cew3MCYzDVryJ0m6ZXkHCCTtHDXxGxJDXcqSz-la03rITh5nOC9wjqciKDN4_UPDHDm9Md_NO3_KVQZs83GI7CKxfyx1DfHy59lNF-PuQIctI9v6gwE7KxD0_KNoDM4UFvyXuninLbAIT2CharuYjhC7m3iH8-9CLNHkc0CbWuERjQu2ET8FbF_VTwaSY7iketENbq6krGYANwbNBkfUepiBjmlH62k-PBfBiDHuNUfhyHEs2MCK-dB446Fz0uNB8eoxvSi-DGiiUFVlcti06qp9vM2ApZaaFEScWgJ2o_YpMdyQPtyQeck-QdyK1iBCCntNB2GRAUCsozygSqK-2RtH1p3GrIiQ";
+                '5zvTV1_-iSv_LVLz9PApQUNu2zErlBHNwbSB3j67tP6M39RFo2NRMXQHGEqV1FUUy_e0tdSY4sQ7NnV2JDGzOdjCQMpI7hMvsAqQFzTb61mIHvDPwTKPUYCAWnrmWjd-rZpIsX1dOcPDFb8lK9NtzabiHLW64BrmLfxRhx96QSQfwiSFw-bpz9ZRLDLIXL-LRS2OyjLlAJci9_BfrocQIAjrOz0boCjGwOT3J5neAfcgqKqktKqSsHGCznLJxqZfabsfscZeKak09uDh-vMWBeZDI_b2prfPIWExqBesXnjHvSL5mTwmcY83xdo1TDlnjZWdq4q_dd3BKh8hc9sKe3yRMoGVfG9vyZ4exX3an8jnaDMAGxvpRpB2gP_XeO__ZcbRt-LheYz9MSGhuWwUhl1ByiWbqc5rdRGuDSrgPDhejZ0IUQZ6_oFq5OthcyOm9PhPyaNxP9O3aoYHNXBGtu4jmyv9WSQpFo4lnivMpbLxe4qgmI3W0p87sFhmgSnO';
             //comment this initially to get acces token logged on console
             $http.defaults.headers.common.Authorization = 'Bearer ' + accessToken;
 
