@@ -9,9 +9,12 @@ angular.module('socialNetwork.home', [
     }])
     .controller('HomeCtrl', [
         '$scope',
+        '$location',
         'authentication',
-        function ($scope,authentication) {
-        $scope.login = function (user) {
+        function ($scope,$location, authentication) {
+
+            $scope.first = 'pesho';
+            $scope.login = function (user) {
             //console.log(user);
             authentication.loginUser(user);
         };

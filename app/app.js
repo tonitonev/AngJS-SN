@@ -2,6 +2,7 @@
 
 angular.module('socialNetwork', [
         'ngRoute',
+        'socialNetwork.common.validation',
         'socialNetwork.common',
         'socialNetwork.common.footer',
         'socialNetwork.home',
