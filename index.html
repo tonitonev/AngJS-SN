@@ -25,6 +25,7 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul ng-if="isAuthenticated" class="nav navbar-nav">
+                <!--ng-if vzima ot $scope.isAuthenticated ot main-controller.js-->
                 <li>
                     <a href="#/newsFeed">News Feed</a>
                 </li>
@@ -60,8 +61,9 @@
 <script src="app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="app/bower_components/angular/angular.js"></script>
 <script src="app/bower_components/angular-route/angular-route.js"></script>
-<script src="app/common/validate-english.js"></script>
+<script src="app/bower_components/angular-cookies/angular-cookies.js"></script>
 <script src="app/app.js"></script>
+<script src="app/common/validate-english.js"></script>
 <script src="app/common/main-controller.js"></script>
 <script src="app/common/footer-directive.js"></script>
 <script src="app/users/authentication.js"></script>

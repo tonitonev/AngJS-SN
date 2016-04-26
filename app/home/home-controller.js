@@ -1,6 +1,6 @@
 angular.module('socialNetwork.home', [
-    'socialNetwork.users.authentication'
-])
+        'socialNetwork.users.authentication'
+    ])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/', {
             templateUrl: 'app/home/home.html',
@@ -11,20 +11,22 @@ angular.module('socialNetwork.home', [
         '$scope',
         '$location',
         'authentication',
-        function ($scope,$location, authentication) {
-
-            $scope.first = 'pesho';
+        function ($scope, $location, authentication) {
             $scope.login = function (user) {
-            //console.log(user);
-            authentication.loginUser(user);
-        };
+                authentication.loginUser(user)
+                    .then(function (loggedInUser) {
+                        //console.log(loggedInUser);
+                        $location.path('/newsFeed'); //redirektva kum newsFeed
+                    });
+            };
 
-        $scope.register = function (user) {
-            //console.log(user);
-            authentication.registerUser(user)
-                .then(function(registeredUser){
-                console.log(registeredUser);
-                });
+            $scope.register = function (user) {
+                //console.log(user);
+                authentication.registerUser(user)
+                    .then(function (registeredUser) {
+                        //console.log(registeredUser);
+                        $location.path('/newsFeed'); //redirektva kum newsFeed
+                    });
+            }
         }
-    }
     ]);
