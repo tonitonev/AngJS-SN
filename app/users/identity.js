@@ -7,6 +7,11 @@ angular.module('socialNetwork.users.identity', [])
 
             var deferred = $q.defer();
 
+            //var obj = {
+            //    firstName: 'pesho',
+            //    roles: ['Admin', 'Support'],
+            //}
+
             var currentUser = undefined;
 
             //comment this initially to get acces token logged on console
@@ -25,7 +30,7 @@ angular.module('socialNetwork.users.identity', [])
                         return deferred.promise;
                     }
                 },
-                removeUserProfile : function () {
+                removeUserProfile: function () {
                     currentUser = undefined;
                 },
                 requestUserProfile: function () {

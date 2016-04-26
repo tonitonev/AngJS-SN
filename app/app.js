@@ -14,10 +14,15 @@ angular.module('socialNetwork', [
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/'});
     }])
-    .run(['authentication', function (authentication) {
+    .run(['$rootScope', '$location', 'authentication', function ($rootScope, $location, authentication) {
+        $rootScope.$on('routeChangeError', function (ev, current, previous, rejection) {
+           //doesn't work
+            if (rejection == 'Unauthorized Access') {
+                $location.path('/');
+            }
+        });
         //console.log(authentication);
         authentication.refreshCookie()
-    }
-    ])
+    }])
     .constant('jQuery', $)
     .constant('BASE_URL', 'http://softuni-social-network.azurewebsites.net/api/');

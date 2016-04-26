@@ -12,6 +12,12 @@ angular.module('socialNetwork.home', [
         '$location',
         'authentication',
         function ($scope, $location, authentication) {
+            if (authentication.isAuthenticated()) {
+                $location.path('/newsFeed');
+            }
+
+
+
             $scope.login = function (user) {
                 authentication.loginUser(user)
                     .then(function (loggedInUser) {
